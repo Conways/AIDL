@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <Button
+        android:text="连接"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/connect"/>
+
+    <Button
+        android:text="添加"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/add"/>
+
+    <Button
+        android:text="删除"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/del"/>
+
+    <Button
+        android:text="获取数量"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/get"/>
+
+    <Button
+        android:text="断开"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/disconnect"/>
+
+    <TextView
+        android:text=""
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/count"/>
+</LinearLayout>
