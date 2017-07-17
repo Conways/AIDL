@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.add:
                 try{
-                    manager.addEmployee(++i);
+                    manager.addEmployee(new Employee());
                 }catch (Exception e){
 
                 }
@@ -99,7 +99,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.get:
                 try{
-                    long i=manager.getEmployee().getId();
+                    int i=manager.getEmployeeCount();
                     count.setText(i+"");
                 }catch (Exception e){
 

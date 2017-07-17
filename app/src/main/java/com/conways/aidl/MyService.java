@@ -10,7 +10,7 @@ import java.util.List;
 
 public class MyService extends Service {
 
-    private List<Employee> list;
+    private List<Employee> list=new ArrayList<>();
 
     public MyService() {
     }
@@ -24,16 +24,12 @@ public class MyService extends Service {
         @Override
         public void basicTypes(int anInt, long aLong, boolean aBoolean, float aFloat, double aDouble, String aString) throws RemoteException {
 
+
         }
 
         @Override
-        public void addEmployee(long id) throws RemoteException {
-            Employee employee = new Employee();
-            employee.setId(id);
-            if (list == null) {
-                list = new ArrayList<>();
-            }
-            list.add(employee);
+        public void addEmployee(Employee em) throws RemoteException {
+            list.add(em);
         }
 
         @Override
@@ -43,9 +39,6 @@ public class MyService extends Service {
 
         @Override
         public Employee getEmployee() throws RemoteException {
-            if (list.size()>0){
-                return list.get(0);
-            }
             return null;
         }
 

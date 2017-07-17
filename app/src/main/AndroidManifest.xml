@@ -17,6 +17,7 @@
         </activity>
 
         <service
+            android:process=":remote"
             android:name=".MyService"
             android:enabled="true"
             android:exported="true">
